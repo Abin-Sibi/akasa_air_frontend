@@ -152,7 +152,7 @@ setIsEdit(false)
         if (formData.image) {
           const formDataToUpload = new FormData();
           formDataToUpload.append('file', formData.image);
-          formDataToUpload.append('upload_preset', 'your_preset');
+          formDataToUpload.append('upload_preset', 'kjadhf739');
           const cloudinaryResponse = await axios.post('https://api.cloudinary.com/v1_1/dp2p38wb5/image/upload', formDataToUpload, {
             headers: { 'Content-Type': 'multipart/form-data' },
           });
