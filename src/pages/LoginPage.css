@@ -11,6 +11,23 @@
     margin:-10px;
 }
 
+.labuttons{
+    width: 200px;
+    padding: 10px;
+    background-color: #ffcf22;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top:20px;
+}
+
+.labuttons:hover {
+    background-color: #e6b60c;
+  }
+
 .lbuttons:hover {
     background-color: #e6b60c;
   }
