@@ -3,6 +3,7 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import './Register.css';  // CSS file for styling
 import axios from '../../../config/axiosConfig' 
+import { useNavigate } from 'react-router-dom';
 
 const Register = () => {
   
@@ -12,6 +13,8 @@ const Register = () => {
     password: '',
     confirmPassword: '',
   };
+
+  const navigate = useNavigate();
 
   // Validation schema using Yup
   const validationSchema = Yup.object().shape({
@@ -37,6 +40,8 @@ const Register = () => {
         // Handle successful response
         alert('Registration successful');
         console.log(response.data);
+        navigate('/');
+        
       })
       .catch(error => {
         // Handle errors
